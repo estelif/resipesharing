@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('https://i.pinimg.com/236x/d7/b8/b2/d7b8b27672946c2c8a305ab86d047dd9.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(121, 121, 81);
+}
+
+p {
+    font-weight: bold;
+    color: rgb(131, 131, 2);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: #444601;
+    padding: 40px 0;
+}
+
+h1, h2, h3 {
+    color: #8e9306;
+}
+
+
+
+nav a {
+    margin: 0 10px;
+}
+section {
+    margin-top: 40px;
+}
+
+section h2 {
+    color: #8e9306;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+figure img {
+    width: 400px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+}
+
+
+/*formm page*/
+
+form {
+    background-color: #fffacd;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #8e9306;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6A3810;
+}
+
+a img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 350px;
+    height: auto;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+a p {
+    margin: 0; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #8e9306; 
+}
+
+/*recipes*/
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.col-md-4 {
+    flex: 1 1 30%; 
+    max-width: 30%; 
+    box-sizing: border-box;
+    padding: 15px; 
+}
+.recipe-image {
+    width: 100%; 
+    height: auto; 
+    transition: 0.3s;
+    border-radius: 10px; 
+}
+.recipe-image {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px; 
+}
+.recipe-image:hover {
+    transform: scale(1.05);
+}
+.fw-bold {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px; 
+}
+.btn {
+    display: inline-block; 
+    padding: 10px 15px; 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+}
+
+.btn:hover {
+    background-color: #044601;  
+    color: white;
+    transform: scale(1.05);
+}
+/*alfredo, etc.*/
+.ingredient-image {
+    text-align: center;
+}
+
+.ingredient-image img {
+    width: 450px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; 
+}
+
+
+p strong {
+    color: #444601; 
+}
+
+ol li {
+    padding: 10px;
+    background-color: #ffffe0;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.submit-page {
+    background-image: url('https://i.pinimg.com/564x/2a/66/3c/2a663c87998452d0aeec660241f912cf.jpg');
+    background-size: 1600px;
+    background-position: center;
+}
+
+.submit-page .form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
