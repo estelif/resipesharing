@@ -129,8 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
   const ratings = {};
-  
-  // Function to create star rating for each recipe
+  /*creating rating */
   function createStarRating(recipeName) {
     const starRatingContainer = document.querySelector(`.star-rating[data-recipe-name="${recipeName}"]`);
     for (let i = 1; i <= 5; i++) {

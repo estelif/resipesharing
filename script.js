@@ -382,7 +382,7 @@ function deleteUser(index) {
 
 
 function recipesubmit(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault();
 
   let username = loggedInUser ? loggedInUser.username : null;
   let recipeName = document.getElementById('recipe-name').value;
@@ -391,7 +391,7 @@ function recipesubmit(event) {
   let cookingTime = document.getElementById('cooking-time').value;
   let difficulty = document.getElementById('difficulty').value;
   let instructions = document.getElementById('instructions').value;
-  let recipeImage = document.getElementById('recipe-image').files[0]; // Get the selected image file
+  let recipeImage = document.getElementById('recipe-image').files[0]; 
 
   if (!username) {
       alert("Please log in first.");
@@ -409,21 +409,19 @@ function recipesubmit(event) {
               cookingTime: cookingTime,
               difficulty: difficulty,
               instructions: instructions,
-              image: reader.result // Store image as a base64 string
+              image: reader.result
           };
 
-          // Store the recipe data in local storage
           let recipes = JSON.parse(localStorage.getItem('recipes') || '[]');
           recipes.push(recipeData);
           localStorage.setItem('recipes', JSON.stringify(recipes));
 
           alert("Recipe submitted successfully!");
-          // Reset the form after submission
           event.target.reset();
 
           
       };
-      reader.readAsDataURL(recipeImage); // Convert the image to base64
+      reader.readAsDataURL(recipeImage); 
   } else {
       alert("Please upload an image.");
   }
@@ -457,10 +455,10 @@ window.onload = function () {
 
 function deleteRecipe(index) {
   let recipes = JSON.parse(localStorage.getItem('recipes') || '[]');
-  recipes.splice(index, 1); // Remove the recipe at the given index
+  recipes.splice(index, 1); 
   localStorage.setItem('recipes', JSON.stringify(recipes));
 
-  // Reload the page to update the table
+  
   window.location.reload();
 }
 
