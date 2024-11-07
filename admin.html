@@ -28,7 +28,34 @@
         <tbody id="userTable">
         </tbody>
     </table>
+
+    <h2 class="text-center mb-4"> Submitted Recipes</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Submitted By</th>
+                    <th>Recipe Name</th>
+                    <th>Category</th>
+                    <th>Ingredients</th>
+                    <th>Cooking Time (mins)</th>
+                    <th>Difficulty</th>
+                    <th>Instructions</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="recipeTableBody">
+            </tbody>
+        </table>
+
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  displayUsers();
+  displayRecipes(); 
+});
+</script>
 <footer class="bg-light text-center py-4 mt-5">
     <div class="container">
         <p>&copy; 2024 Recipe Sharing Website</p>

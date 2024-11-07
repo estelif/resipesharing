@@ -28,7 +28,7 @@
     <main class="submit-page container mt-5">
         <h2 class="text-center mb-4">Submit Your Favorite Recipe</h2>
 
-        <form action="#" method="post" class="form-container" >
+        <form action="#" method="post" class="form-container" onsubmit="recipesubmit(event)" id="recipe-form">
             <div class="row mb-3">
                 <div class="col-6">
                     <div class="form-floating">
@@ -88,17 +88,7 @@
         </form>
     </main>
 
-    <script>
-        function recipesubmit() {
-            let confirmsubmit = confirm("Do you want to submit the recipe?");
-            if (confirmsubmit) {
-                alert("Recipe has been submitted successfully!");
-            } 
-            else {
-                alert("Submission cancelled.");}
-            }
-        
-    </script>
+
 
     <footer class="bg-light text-center py-4 mt-5">
         <div class="container">
